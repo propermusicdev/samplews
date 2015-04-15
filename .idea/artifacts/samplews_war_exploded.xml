@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="samplews:war exploded">
+    <output-path>$PROJECT_DIR$/target/samplews</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="samplews" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax:javaee-api:7.0" />
+          <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.0" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.1.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.1.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.1.2" />
+          <element id="library" level="project" name="Maven: com.rabbitmq:amqp-client:3.4.3" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/jconn4.jar" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="C:\Users\Lebel\IdeaProjects\samplews\target/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="samplews/web/Web" />
+    </root>
+  </artifact>
+</component>

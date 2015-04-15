@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Warehouse Support - Webservice</title>
+    <style type="text/css">
+
+        #centered {
+            top: 50%;
+            left: 50%;
+            width:30em;
+            height:18em;
+            margin-top: -9em; /*set to a negative number 1/2 of your height*/
+            margin-left: -15em; /*set to a negative number 1/2 of your width*/
+            border: 1px solid #ccc;
+            background-color: #f3f3f3;
+            position:fixed;
+        }
+        #centered p {
+            /*background: yellow;*/
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: 0 -50% 0 0;
+            transform: translate(-50%, -50%)
+        }
+        .blink_me {
+            color: darkgreen;
+            -webkit-animation-name: blinker;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+
+            -moz-animation-name: blinker;
+            -moz-animation-duration: 1s;
+            -moz-animation-timing-function: linear;
+            -moz-animation-iteration-count: infinite;
+
+            animation-name: blinker;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @-moz-keyframes blinker {
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        }
+
+        @-webkit-keyframes blinker {
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        }
+
+        @keyframes blinker {
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        }
+    </style>
+</head>
+<body>
+    <div id="centered">
+        <p class="center_me">Web service reports that everything is: <strong class="blink_me">OK</strong></p>
+    </div>
+</body>
+</html>
